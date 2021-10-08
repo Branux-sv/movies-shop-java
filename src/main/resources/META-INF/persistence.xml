@@ -1,0 +1,28 @@
+<persistence version="2.1"
+			 xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+			 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="JpaForAPI" transaction-type="RESOURCE_LOCAL">
+	<class>org.branuxsv.rentalmovies.model.Category</class>
+	<class>org.branuxsv.rentalmovies.model.Movie</class>	
+	<class>org.branuxsv.rentalmovies.model.Likes</class>
+	<class>org.branuxsv.rentalmovies.model.User</class>
+	<class>org.branuxsv.rentalmovies.model.Role</class>		
+	<class>org.branuxsv.rentalmovies.model.Client</class>
+	<class>org.branuxsv.rentalmovies.model.TokenUser</class>				
+	<class>org.branuxsv.rentalmovies.model.ShoppingCar</class>					
+	<class>org.branuxsv.rentalmovies.model.DetailShoppingCar</class>					
+	<class>org.branuxsv.rentalmovies.model.Purchase</class>					
+	<class>org.branuxsv.rentalmovies.model.DetailPurchase</class>					
+	<class>org.branuxsv.rentalmovies.model.Rental</class>					
+	<class>org.branuxsv.rentalmovies.model.DetailRental</class>								
+    <properties>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/movie_rental" />
+            <property name="javax.persistence.jdbc.user" value="root" />
+            <property name="javax.persistence.jdbc.password" value="" />
+			<property name="eclipselink.logging.level.sql" value="FINE"/>
+			<property name="eclipselink.logging.parameters" value="true"/>            
+    </properties>	
+  </persistence-unit>
+</persistence>
